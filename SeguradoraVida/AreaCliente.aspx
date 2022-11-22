@@ -13,91 +13,92 @@
 
 </head>
 <body>
-  <header>
-  <div class="navigation">
+    <header>
+        <div class="navigation">
 
-    <ul>
-        <li><a href="Default.aspx">Home</a></li>
-        <li><a href="Contato.aspx">Contato</a></li>
-        <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
-        <li><a href="Servico.aspx">Serviços</a> </li>
-    </ul>
-  </header>
-
-
-<div>
-<input readonly="" type="email" id="Oii" name="xx" placeholder=" Nome completo " value="">
-<br>
-<br>
-<input readonly="" type="email" id="Oii" name="xx" placeholder=" CPF " value="">
-<br>
-<br>
-<input readonly="" type="text" name="xx" placeholder=" Telefone " value="">
-<br>
-<br>
-<input readonly="" type="text" name="xx" placeholder=" Email " value="">
-<br>
-<br>
-<input readonly="" type="email" id="Oii" name="xx" placeholder=" Data de Nascimento " value="">
-<br>
-<br>
-<input readonly="" type="email" id="Oii" name="xx" placeholder=" Seguro " value="">
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Contato.aspx">Contato</a></li>
+                <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+                <li><a href="Servico.aspx">Serviços</a> </li>
+            </ul>
+    </header>
 
 
-<label for="editar">Alterar</label>
-<input type="checkbox" name="check" value="sim" id="editar" />
-<input type="submit" value="Salvar Dados" />
-
-</div>
-
-<div class="container">
-    .
-  </div>
-
-<script>
-    var editar = document.getElementById("editar");
-
-
-// No click verifico se o editar esta marcado e desativo os 
-// readOnly dos inputs type text
-editar.addEventListener("click", function() {
-  if (this.checked) {
-    toggleReadOnly(false);
-  } else {
-    toggleReadOnly(true);
-  }
-});
-
-// Percorro  os elementos inputs type text e habilito/desabilito
-function toggleReadOnly(bool) {
-  var inputs = document.getElementsByTagName("input");
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].type === "text") {
-      inputs[i].readOnly = bool;
-    }
-  }
-}
-
-</script>
+    <div>
+        <input readonly="" type="email" id="Oii" name="xx" placeholder=" Nome completo " value="">
+        <br>
+        <br>
+        <input readonly="" type="email" id="Oii" name="xx" placeholder=" CPF " value="">
+        <br>
+        <br>
+        <input readonly="" type="text" name="xx" placeholder=" Telefone " value="">
+        <br>
+        <br>
+        <input readonly="" type="text" name="xx" placeholder=" Email " value="">
+        <br>
+        <br>
+        <input readonly="" type="email" id="Oii" name="xx" placeholder=" Data de Nascimento " value="">
+        <br>
+        <br>
+        <input readonly="" type="email" id="Oii" name="xx" placeholder=" Seguro " value="">
 
 
-<div class="ImagemEleven">
-  <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
-</div>
+        <label for="editar">Alterar</label>
+        <input type="checkbox" name="check" value="sim" id="editar" />
+        <input type="submit" value="Salvar Dados" />
 
-<div class="ImagemTwelve">
-  <img src="Imagens/App.jpg" width="300" height="100" id="img12">
-</div>
+    </div>
+
+    <div class="container">
+        .
+    </div>
+
+    <script>
+        var editar = document.getElementById("editar");
 
 
-<footer>
-  <ul><br>
-      <li><b>Links rápidos</b></li>
-      <br>
-      <li><a href="Termodeuso.html">Termo de uso ></a></li>
-      <li><a href="Telaleigeraldeprotecaodedados.html">LGPD - Lei Geral de Proteção de Dados ></a></li>
-      <li><a href="TelaServiços.html">Serviços></a></li>
-  </ul>
-  </footer>
+        // No click verifico se o editar esta marcado e desativo os 
+        // readOnly dos inputs type text
+        editar.addEventListener("click", function () {
+            if (this.checked) {
+                toggleReadOnly(false);
+            } else {
+                toggleReadOnly(true);
+            }
+        });
+
+        // Percorro  os elementos inputs type text e habilito/desabilito
+        function toggleReadOnly(bool) {
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].type === "text") {
+                    inputs[i].readOnly = bool;
+                }
+            }
+        }
+
+    </script>
+
+
+    <div class="ImagemEleven">
+        <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
+    </div>
+
+    <div class="ImagemTwelve">
+        <img src="Imagens/App.jpg" width="300" height="100" id="img12">
+    </div>
+
+
+    <footer>
+        <ul>
+            <br>
+            <li><b>Links rápidos</b></li>
+            <br>
+            <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+            <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+            <li><a href="Servico.aspx">Serviços></a></li>
+        </ul>
+    </footer>
 </body>
 </html>

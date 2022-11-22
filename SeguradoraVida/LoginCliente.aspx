@@ -42,7 +42,7 @@
             
             <input type="submit" value="Enviar">
             
-         Ainda não simulou seu seguro? <br> <a href="TelaSimular.html">simule agora mesmo (: </a>
+         Ainda não simulou seu seguro? <br> <a href="SimulaSeguros.aspx">simule agora mesmo (: </a>
 		
 	</form>
 
@@ -51,7 +51,7 @@
       </div>
 
       <div class="BotaoVoltar">
-        <a href="TelaHome.html"><button type="button" class="btn-Voltar"> <---- </button></a>
+        <a href="Default.aspx"><button type="button" class="btn-Voltar"> <---- </button></a>
     
     </div>
 
@@ -67,8 +67,8 @@
         <ul><br>
             <li><b>Links rápidos</b></li>
             <br>
-            <li><a href="Termodeuso.html">Termo de uso ></a></li>
-            <li><a href="Telaleigeraldeprotecaodedados.html">LGPD - Lei Geral de Proteção de Dados ></a></li>
-            <li><a href="TelaServiços.html">Serviços></a></li>
+            <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+            <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+            <li><a href="Servico.aspx">Serviços></a></li>
         </ul>
         </footer>

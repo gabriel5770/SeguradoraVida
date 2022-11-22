@@ -64,7 +64,7 @@
         </div>
 
         <div class="BotaoHome">
-            <a href="TelaHome.html">
+            <a href="Default.aspx">
                 <button type="button" class="btn-Home">Home</button></a>
 
         </div>
@@ -84,9 +84,9 @@
                 <br>
                 <li><b>Links rápidos</b></li>
                 <br>
-                <li><a href="Termodeuso.html">Termo de uso ></a></li>
-                <li><a href="Telaleigeraldeprotecaodedados.html">LGPD - Lei Geral de Proteção de Dados ></a></li>
-                <li><a href="TelaServiços.html">Serviços></a></li>
+                <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+                <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+                <li><a href="Servico.aspx">Serviços></a></li>
             </ul>
         </footer>
 </body>
