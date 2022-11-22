@@ -1,0 +1,426 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    min-height: 100vh;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    background: -webkit-gradient(linear, left top, right top, from( #1b86dd), to(#034086)) no-repeat;
+    background: -moz-linear-gradient(left, #CCCCCC, #000000);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#CCCCCC', EndColorStr='#000000');
+}
+
+    .navigation ul li {
+        color: white;
+        padding: 20px;
+        display: inline-block;
+        text-decoration: none;
+        transition: background .4s;
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navigation ul li:hover {
+            background-color: rgb(218, 211, 211);
+            color: rgb(14, 96, 204);
+        }
+
+#img0 {
+    position: absolute;
+    right: 51%;
+    top: 26%;
+}
+
+#img03 {
+    position: absolute;
+    transform: translateY(1000px);
+    right: 69%;
+}
+
+#img04 {
+    position: absolute;
+    transform: translateY(1000px);
+    right: 40%;
+}
+
+#img05 {
+    position: absolute;
+    transform: translateY(1000px);
+    right: 12%;
+}
+
+#img06 {
+    position: absolute;
+    transform: translateY(1580px);
+    right: 72%;
+}
+
+#img07 {
+    position: absolute;
+    transform: translateY(1600px);
+    right: 52%;
+}
+
+#img08 {
+    position: absolute;
+    transform: translateY(1650px);
+    right: 32%;
+}
+
+#img09 {
+    position: absolute;
+    transform: translateY(1630px);
+    right: 12%;
+}
+
+#img10 {
+    position: absolute;
+    right: 47%;
+    transform: translateY(2190px);
+}
+
+#img11 {
+    position: absolute;
+    right: 0%;
+    transform: translateY(2600px);
+    z-index: 1;
+}
+
+#img12 {
+    position: absolute;
+    right: 0%;
+    transform: translateY(2500px);
+    z-index: 1;
+}
+
+.PosiçãoFirst {
+    position: absolute;
+    left: 55%;
+    transform: translateX(-60px);
+    color: rgb(0, 0, 0);
+    transform: translateY(180px);
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.PosiçãoTwo {
+    position: absolute;
+    text-align: center;
+    left: 7%;
+    transform: translateX(-60px);
+    transform: translateY(600px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(97, 96, 96);
+}
+
+.PosiçãoThree {
+    position: absolute;
+    left: 41%;
+    transform: translateX(-60px);
+    transform: translateY(750px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.PosiçãoFour {
+    position: absolute;
+    text-align: center;
+    right: 44%;
+    margin-top: auto;
+    transform: translateX(-60px);
+    transform: translateY(880px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.PosiçãoFour02 {
+    position: absolute;
+    text-align: center;
+    right: 11%;
+    transform: translateX(-60px);
+    transform: translateY(1140px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.PosiçãoFive {
+    position: absolute;
+    text-align: center;
+    right: 77%;
+    transform: translateX(-60px);
+    transform: translateY(880px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.PosiçãoFive02 {
+    position: absolute;
+    text-align: center;
+    right: 70%;
+    transform: translateX(-60px);
+    transform: translateY(1140px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.PosiçãoSix {
+    position: absolute;
+    text-align: center;
+    right: 16%;
+    transform: translateX(-60px);
+    transform: translateY(880px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.PosiçãoSix02 {
+    position: absolute;
+    text-align: center;
+    right: 40%;
+    transform: translateX(-60px);
+    transform: translateY(1140px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.btn-Simular {
+    position: absolute;
+    right: 27%;
+    margin-top: 29%;
+    background-color: #1b86dd;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 100px;
+    transition: background .4s;
+}
+
+    .btn-Simular:hover {
+        background-color: rgb(218, 211, 211);
+        color: rgb(14, 96, 204);
+    }
+
+.Seguradora {
+    position: absolute;
+    color: rgb(97, 96, 96);
+    font-size: 30px;
+    left: 12%;
+    transform: translateY(1325px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Seguradora02 {
+    position: absolute;
+    color: rgb(97, 96, 96);
+    left: 15%;
+    transform: translateY(1400px);
+    font-size: 20px;
+}
+
+.PossoAjudar {
+    position: absolute;
+    color: rgb(97, 96, 96);
+    font-size: 30px;
+    left: 37%;
+    transform: translateY(1880px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.PossoAjudar02 {
+    position: absolute;
+    color: rgb(97, 96, 96);
+    left: 29%;
+    transform: translateY(1950px);
+    font-size: 20px;
+}
+
+.Duvidas {
+    position: absolute;
+    color: rgb(97, 96, 96);
+    transform: translateY(2240px);
+    right: 45%;
+}
+
+.Duvidas02 {
+    position: absolute;
+    color: rgb(97, 96, 96);
+    right: 48.5%;
+    transform: translateY(2200px);
+    font-size: 15px;
+}
+
+.btn-Contato {
+    position: absolute;
+    right: 46%;
+    transform: translateY(2280px);
+    background-color: #1b86dd;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px 1px;
+    width: 120px;
+    transition: background .4s;
+}
+
+    .btn-Contato:hover {
+        background-color: rgb(218, 211, 211);
+        color: rgb(14, 96, 204);
+    }
+
+.FundoA {
+    position: absolute;
+    transform: translateY(2090px);
+    right: 46.5%;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 135px;
+    border-top-right-radius: 3px;
+    border: 2px solid rgb(104, 149, 207);
+}
+
+.FundoB {
+    position: absolute;
+    transform: translateY(2090px);
+    right: 46.5%;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 135px;
+    border-top-right-radius: 3px;
+    border: 2px solid rgb(104, 149, 207);
+}
+
+.FundoC {
+    position: absolute;
+    transform: translateY(2090px);
+    right: 46.5%;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 135px;
+    border-top-right-radius: 3px;
+    border: 2px solid rgb(104, 149, 207);
+}
+
+.FundoD {
+    position: absolute;
+    transform: translateY(2090px);
+    right: 46.5%;
+    color: rgb(255, 255, 255);
+    width: 110px;
+    height: 135px;
+    border-top-right-radius: 3px;
+    border: 2px solid rgb(104, 149, 207);
+}
+
+.FundoE {
+    position: absolute;
+    background-color: rgb(104, 149, 207);
+    color: rgb(255, 255, 255);
+    transform: translateY(580px);
+    right: 47%;
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+}
+
+.FundoF {
+    position: absolute;
+    background-color: rgb(104, 149, 207);
+    color: rgb(255, 255, 255);
+    transform: translateY(820px);
+    right: 47%;
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+}
+
+.FundoH {
+    position: absolute;
+    background-color: rgb(104, 149, 207);
+    color: rgb(255, 255, 255);
+    transform: translateY(2010px);
+    right: 47%;
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+}
+
+.SeguroDeVida {
+    position: absolute;
+    right: 35%;
+    transform: translateY(35px);
+}
+
+.FundoSeguroDeVida {
+    position: absolute;
+    right: 44%;
+    background-color: rgb(104, 149, 207);
+    color: rgb(104, 149, 207);
+    width: 7px;
+    height: 25px;
+    border-radius: 1px;
+    transform: translateY(34px);
+}
+
+.SimuleSeuSeguro {
+    position: absolute;
+    right: 22%;
+    transform: translateY(365px);
+}
+
+footer {
+    position: absolute;
+    transform: translateY(2400px);
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+    width: 100%;
+    height: 210px;
+}
+
+    footer ul {
+        text-decoration: none;
+        list-style: none;
+    }
+
+        footer ul a {
+            text-decoration: none;
+            list-style: none;
+            color: #FFF;
+        }
+
+#back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: #1b86dd;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border-style: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background .4s;
+}
