@@ -57,7 +57,7 @@
           <div>
             <label>E-mail</label>
           </br>
-          
+                       
             <input type="text" required placeholder="Pessoa@hotmail.com">
              
           </div>
@@ -101,7 +101,7 @@
 
           <br />
 
-      <input type="submit" name="submit" id="submit" onclick="avancar()" / required>
+        <input type="button" id="btnEnviarContato" value="Enviar" runat="server"/>
       <div>
 
         <div class="container">
