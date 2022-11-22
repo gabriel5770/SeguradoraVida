@@ -96,7 +96,7 @@
     </div>
 
     <div class="btn-Simular">
-        <a href="TelaSimular.html">
+        <a href="SimulaSeguros.aspx">
             <button type="button" class="btn-Simular">Simular</button></a>
     </div>
 
@@ -195,7 +195,7 @@
     </div>
 
     <div class="BotaoContato">
-        <a href="TelaContato.html">
+        <a href="Contato.aspx">
             <button type="button" class="btn-Contato">Contato</button></a>
 
     </div>
