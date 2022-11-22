@@ -15,16 +15,15 @@
 <body>
     <header>
         <div class="navigation">
-           <ul>
-           <li><a href="TelaHome.html">Home</a></li>
-           <li><a href="TelaContato.html">Contato</a></li>
-           <li><a href="LoginAreaDoCliente.html">Area do cliente</a></li>
-           <li><a href="TelaServiços.html">Serviços</a> </li>
-           </ul>
-        
-       </header>
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Contato.aspx">Contato</a></li>
+                <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+                <li><a href="Servico.aspx">Serviços</a> </li>
+            </ul>
+    </header>
 
-       <div class="PosiçãoFive02">
+    <div class="PosiçãoFive02">
 
         <h3>Invalidez</h3>
         <h4>Como funciona o seguro de vida invalidez por doença</h4>
@@ -46,7 +45,7 @@
             <li>Esclerose múltipla: diagnóstico confirmado por neurologista;</li>
             <li>Alzheimer.</li>
         </ul>
-    
+
         <p>Antes de assinar o contrato, o futuro segurado também deve prestar atenção a o que o seguro não cobrirá.  Em alguns casos, o seguro não será aplicável. Entre eles:</p>
         <ul>
             <li>Câncer preexistente à vigência da apólice;</li>
@@ -59,7 +58,7 @@
             <li>Câncer de pele que não seja melanoma maligno;</li>
             <li>Angioplastia, entre outros.</li>
         </ul>
-    
+
         <h4>Quanto custa um seguro de vida invalidez por doença?</h4>
         <p>Na hora de contratar um seguro invalidez por doenças, vários fatores são considerados para calcular o preço.</p>
         <p>Entre eles, são levados em conta a idade, o gênero, o histórico médico, peso, altura e se a pessoa é ou foi fumante.</p>
@@ -68,34 +67,35 @@
         <p>No caso da aposentadoria, do INSS, o contribuinte precisa apresentar uma invalidez funcional, que lhe deixe incapaz de trabalhar.</p>
         <p>Na hora de contratar o seu seguro de vida por invalidez é importante atentar para o tipo de cobertura que oferece, e se a  cobertura é majorada ou não. Se não for, a indenização estará sujeita a um pagamento proporcional, de acordo com uma tabela.</p>
         <p>Isso quer dizer que, para que ele receba 100% do valor da apólice, precisará perder ambos os membros, ou ter uma cobertura majorada.</p>
-    
+
         <ul>
 
-    <div class="ImagemEleven">
-        <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
-    </div>
-    
-    <div class="ImagemTwelve">
-        <img src="Imagens/App.jpg" width="300" height="100" id="img12">
-    </div>
-      
-         
-    <div class="BotaoHome">
-        <a href="TelaHome.html"><button type="button" class="btn-Home">Home</button></a>
-    </div>
-  
-      
-        <footer>
+            <div class="ImagemEleven">
+                <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
+            </div>
 
-            <ul><br>
-            <li><b>Links rápidos</b></li>
-            <br>
-            <li><a href="Termodeuso.html">Termo de uso ></a></li>
-            <li><a href="Telaleigeraldeprotecaodedados.html">LGPD - Lei Geral de Proteção de Dados ></a></li>
-            <li><a href="TelaServiços.html">Serviços></a></li>
-            
-            </ul>
+            <div class="ImagemTwelve">
+                <img src="Imagens/App.jpg" width="300" height="100" id="img12">
+            </div>
+
+
+            <div class="BotaoHome">
+                <a href="TelaHome.html">
+                    <button type="button" class="btn-Home">Home</button></a>
+            </div>
+
+
+            <footer>
+
+                <ul>
+                    <br>
+                    <li><b>Links rápidos</b></li>
+                    <br>
+                    <li><a href="Termodeuso.html">Termo de uso ></a></li>
+                    <li><a href="Telaleigeraldeprotecaodedados.html">LGPD - Lei Geral de Proteção de Dados ></a></li>
+                    <li><a href="TelaServiços.html">Serviços></a></li>
+
+                </ul>
             </footer>
-            
-    </body>
-    </html>
+</body>
+</html>

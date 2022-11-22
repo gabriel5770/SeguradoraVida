@@ -17,10 +17,10 @@
   <div class="navigation">
 
     <ul>
-        <li><a href="TelaHome.html">Home</a></li>
-        <li><a href="TelaContato.html">Contato</a></li>
-        <li><a href="LoginAreaDoCliente.html">Area do Cliente</a></li>
-        <li><a href="TelaServiços.html">Serviços</a> </li>
+        <li><a href="Default.aspx">Home</a></li>
+        <li><a href="Contato.aspx">Contato</a></li>
+        <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+        <li><a href="Servico.aspx">Serviços</a> </li>
     </ul>
   </header>
 
