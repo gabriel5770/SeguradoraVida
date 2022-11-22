@@ -40,7 +40,7 @@
             <br>
             <br>
             
-            <input type="submit" value="Enviar">
+        <input style="width:200px" type="button" id="btnEnviarContato" value="Enviar" runat="server" />
             
          Ainda não simulou seu seguro? <br> <a href="SimulaSeguros.aspx">simule agora mesmo (: </a>
 		

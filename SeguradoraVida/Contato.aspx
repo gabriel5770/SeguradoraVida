@@ -72,7 +72,7 @@
     </br>
     </br>
 
-    <input type="submit" name="submit" id="submit" onclick="avancar()"/ required>
+        <input type="button" id="btnEnviarContato" value="Enviar" runat="server"/>
 
   </fieldset>
 </form>  

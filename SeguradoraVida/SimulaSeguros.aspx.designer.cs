@@ -15,12 +15,12 @@ namespace SeguradoraVida
     {
 
         /// <summary>
-        /// Controle btnEnviarContato.
+        /// Controle btnEnviarSimulacao.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputButton btnEnviarContato;
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton btnEnviarSimulacao;
     }
 }

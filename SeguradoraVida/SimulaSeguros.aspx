@@ -101,15 +101,13 @@
 
           <br />
 
-        <input type="button" id="btnEnviarContato" value="Enviar" runat="server"/>
+        <input type="button" id="btnEnviarSimulacao" value="Enviar" runat="server"/>
       <div>
 
-        <div class="container">
-            .
+        <div class="container">         
           </div>
-
           <div class="oii">
-            .
+           
           </div>
                   
         </div>
