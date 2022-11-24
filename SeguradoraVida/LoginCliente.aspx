@@ -25,23 +25,22 @@
 
 </div>
 
-	<form name="cadastro">
+	<form name="cadastro" runat="server">
         <h4>Digite <b>seu CPF </h4></b>Preencha para continuar.<br><br>
-		<input type="text" name="cpf" placeholder="CPF"
-			pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-			title="Digite um CPF no formato: xxx.xxx.xxx-xx">
-            <br>
+        <asp:TextBox ID="txtCpf" Columns="1" runat="server"/>
+              <br>
             <br>
 
         <h4>Digite <b>sua Senha</h4></b>
-		<input type="password" name="senha" placeholder="Senha">
+        <asp:TextBox ID="txtSenha" Columns="1" runat="server"/>
             <br>
             <br>
             <br>
             <br>
             
-        <input style="width:200px" type="button" id="btnEnviarContato" value="Enviar" runat="server" />
-            
+<asp:Button id="btnLogar"
+            OnClick="logar_Click" 
+           runat="server"/>            
          Ainda não simulou seu seguro? <br> <a href="SimulaSeguros.aspx">simule agora mesmo (: </a>
 		
 	</form>

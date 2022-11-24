@@ -11,7 +11,13 @@ namespace SeguradoraVida
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+             
+        }
 
+        protected void logar_Click(object sender, EventArgs e)
+        {
+            string x = txtCpf.Text;
+            string y = txtSenha.Text;
         }
     }
 }
