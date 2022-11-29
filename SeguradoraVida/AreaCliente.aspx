@@ -13,92 +13,95 @@
 
 </head>
 <body>
-    <header>
-        <div class="navigation">
+    <form runat="server">
 
-            <ul>
-                <li><a href="Default.aspx">Home</a></li>
-                <li><a href="Contato.aspx">Contato</a></li>
-                <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
-                <li><a href="Servico.aspx">Serviços</a> </li>
-            </ul>
-    </header>
+        <header>
+            <div class="navigation">
 
-
-    <div>
-        <input readonly="" type="email" id="Oii" name="xx" placeholder=" Nome completo " value="">
-        <br>
-        <br>
-        <input readonly="" type="email" id="Oii" name="xx" placeholder=" CPF " value="">
-        <br>
-        <br>
-        <input readonly="" type="text" name="xx" placeholder=" Telefone " value="">
-        <br>
-        <br>
-        <input readonly="" type="text" name="xx" placeholder=" Email " value="">
-        <br>
-        <br>
-        <input readonly="" type="email" id="Oii" name="xx" placeholder=" Data de Nascimento " value="">
-        <br>
-        <br>
-        <input readonly="" type="email" id="Oii" name="xx" placeholder=" Seguro " value="">
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="Contato.aspx">Contato</a></li>
+                    <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+                    <li><a href="Servico.aspx">Serviços</a> </li>
+                </ul>
+        </header>
 
 
-        <label for="editar">Alterar</label>
-        <input type="checkbox" name="check" value="sim" id="editar" />
-        <input type="submit" value="Salvar Dados" />
+        <div>
+            <asp:TextBox ID="txtNome" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <br>
+            <br>
+            <asp:TextBox ID="txtCpf" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <br>
+            <br>
+            <asp:TextBox ID="txtTelefone" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <br>
+            <br>
+            <asp:TextBox ID="txtEmail" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <br>
+            <br>
+            <asp:TextBox ID="txtDataNascimento" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <br>
+            <br>
+            <asp:TextBox ID="txtSeguro" Width="180px" Enabled="false"  Columns="1" runat="server" />
 
-    </div>
 
-    <div class="container">
-        .
-    </div>
+            <label for="editar">Alterar</label>
+            <input type="checkbox" name="check" value="sim" id="editar" />
+            <input type="submit" value="Salvar Dados" />
 
-    <script>
-        var editar = document.getElementById("editar");
+        </div>
+
+        <div class="container">
+            .
+        </div>
+
+        <script>
+            var editar = document.getElementById("editar");
 
 
-        // No click verifico se o editar esta marcado e desativo os 
-        // readOnly dos inputs type text
-        editar.addEventListener("click", function () {
-            if (this.checked) {
-                toggleReadOnly(false);
-            } else {
-                toggleReadOnly(true);
-            }
-        });
+            // No click verifico se o editar esta marcado e desativo os 
+            // readOnly dos inputs type text
+            editar.addEventListener("click", function () {
+                if (this.checked) {
+                    toggleReadOnly(false);
+                } else {
+                    toggleReadOnly(true);
+                }
+            });
 
-        // Percorro  os elementos inputs type text e habilito/desabilito
-        function toggleReadOnly(bool) {
-            var inputs = document.getElementsByTagName("input");
-            for (var i = 0; i < inputs.length; i++) {
-                if (inputs[i].type === "text") {
-                    inputs[i].readOnly = bool;
+            // Percorro  os elementos inputs type text e habilito/desabilito
+            function toggleReadOnly(bool) {
+                var inputs = document.getElementsByTagName("input");
+                for (var i = 0; i < inputs.length; i++) {
+                    if (inputs[i].type === "text") {
+                        inputs[i].readOnly = bool;
+                    }
                 }
             }
-        }
 
-    </script>
-
-
-    <div class="ImagemEleven">
-        <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
-    </div>
-
-    <div class="ImagemTwelve">
-        <img src="Imagens/App.jpg" width="300" height="100" id="img12">
-    </div>
+        </script>
 
 
-    <footer>
-        <ul>
-            <br>
-            <li><b>Links rápidos</b></li>
-            <br>
-            <li><a href="TermosUso.aspx">Termo de uso ></a></li>
-            <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
-            <li><a href="Servico.aspx">Serviços></a></li>
-        </ul>
-    </footer>
+        <div class="ImagemEleven">
+            <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
+        </div>
+
+        <div class="ImagemTwelve">
+            <img src="Imagens/App.jpg" width="300" height="100" id="img12">
+        </div>
+
+
+        <footer>
+            <ul>
+                <br>
+                <li><b>Links rápidos</b></li>
+                <br>
+                <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+                <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+                <li><a href="Servico.aspx">Serviços></a></li>
+            </ul>
+        </footer>
+    </form>
 </body>
 </html>

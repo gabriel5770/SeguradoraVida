@@ -1,9 +1,11 @@
-﻿using System;
+﻿using SeguradoraVida.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+
 
 namespace SeguradoraVida
 {
@@ -16,8 +18,14 @@ namespace SeguradoraVida
 
         protected void logar_Click(object sender, EventArgs e)
         {
-            string x = txtCpf.Text;
-            string y = txtSenha.Text;
+            string LoginCpf = txtCpf.Text;
+            string Senha = txtSenha.Text;
+
+            Cliente cliente = new Cliente(LoginCpf, Senha);
+            if (cliente.VerificaLogin())
+            {
+                Response.Redirect("AreaCliente.aspx");
+            }
         }
     }
 }

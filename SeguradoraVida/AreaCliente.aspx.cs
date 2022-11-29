@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SeguradoraVida.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,12 @@ namespace SeguradoraVida
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            txtNome.Text = Cliente._nome;
+            txtCpf.Text = Cliente._cpf;
+            txtTelefone.Text = Cliente._telefone;
+            txtEmail.Text = Cliente._email;
+            txtDataNascimento.Text = Cliente._dataNascimento;
+            txtSeguro.Text = Cliente._nomeSeguradora;
 
         }
     }
