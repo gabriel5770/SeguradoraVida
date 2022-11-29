@@ -20,5 +20,17 @@ namespace SeguradoraVida
             txtSeguro.Text = Cliente._nomeSeguradora;
 
         }
+
+        protected void Check_Clicked(object sender, EventArgs e)
+        {
+            if(checkHabilitaCombo.Checked == true)
+            {
+               txtEmail.Enabled = true;
+            }
+            else
+            {
+                txtEmail.Enabled = false;
+            }
+        }
     }
 }
