@@ -22,25 +22,25 @@ body {
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#CCCCCC', EndColorStr='#000000');
 }
 
-    .navigation ul li {
-        color: white;
-        padding: 20px;
-        display: inline-block;
-        text-decoration: none;
-        transition: background .4s;
-        font-size: larger;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+.navigation ul li {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-        .navigation ul li a {
-            text-decoration: none;
-            color: white;
-        }
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+}
 
-        .navigation ul li:hover {
-            background-color: rgb(218, 211, 211);
-            color: rgb(14, 96, 204);
-        }
+.navigation ul li:hover {
+    background-color: rgb(218, 211, 211);
+    color: rgb(14, 96, 204);
+}
 
 input {
     background-color: #e6e8ea;
@@ -51,35 +51,32 @@ input {
     padding: 5px;
 }
 
-    input[type="submit"] {
-        position: absolute;
-        transform: translateY(-60px);
-        width: 150px;
-        height: 35px;
-        right: 20%;
-        background-color: #1b86dd;
-        color: white;
-        text-align: center;
-        cursor: pointer;
-    }
+#btnLogar {
+    background-color: #1b86dd;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
 
-form {
-    position: absolute;
-    transform: translateY(200px);
-    right: 41.6%;
+main {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    
 }
 
 .container {
-    background-color: rgb(255, 255, 255);
-    color: white;
-    z-index: 1;
-    border: 2px solid rgb(169, 166, 166);
-    ;
+    background: transparent;
+    border: 2px solid #1b86dd;
     border-radius: 3px;
-    width: 350px;
-    height: 350px;
-    margin-top: 140px;
-    margin-left: 570px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 a {
@@ -87,28 +84,24 @@ a {
 }
 
 .btn-Voltar {
-    position: absolute;
-    right: 58%;
-    transform: translateY(-320px);
     background-color: #6cade3;
     color: rgb(255, 255, 255);
     border-radius: 3px;
     border-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 1px 1px;
+    padding: 1px;
     width: 50px;
     transition: background .4s;
 }
 
-    .btn-Voltar:hover {
-        background-color: rgb(218, 211, 211);
-        color: rgb(14, 96, 204);
-    }
+.btn-Voltar:hover {
+    background-color: rgb(218, 211, 211);
+    color: rgb(14, 96, 204);
+}
 
 #img11 {
     position: absolute;
     right: 0%;
-    transform: translateY(300px);
     z-index: 1;
     padding: auto;
 }
@@ -116,27 +109,25 @@ a {
 #img12 {
     position: absolute;
     right: 0%;
-    transform: translateY(220px);
     z-index: 1;
-    padding: auto;
 }
 
 footer {
     position: absolute;
-    transform: translateY(220px);
+    bottom:0;
     background-color: rgb(0, 0, 0);
     color: #FFF;
     width: 100%;
     height: 180px;
 }
 
-    footer ul {
-        text-decoration: none;
-        list-style: none;
-    }
+footer ul {
+    text-decoration: none;
+    list-style: none;
+}
 
-        footer ul a {
-            text-decoration: none;
-            list-style: none;
-            color: #FFF;
-        }
+footer ul a {
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+}

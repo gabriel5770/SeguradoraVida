@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Web.UI;
+using System.Diagnostics;
+using System.Web.Optimization;
+using System.Text;
 
 namespace SeguradoraVida.Model
 {
@@ -55,6 +59,9 @@ namespace SeguradoraVida.Model
                  connection.Open();
                 command.ExecuteNonQuery();
 
+
+
+
                 try
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -75,15 +82,14 @@ namespace SeguradoraVida.Model
                         }
                         else
                         {
-                            
                         }
                     }
                     connection.Close();
                 }
-                catch (SqlException ex)
+                catch (Exception ex)
                 {
-                    
-                }
+                    throw new Exception(ex.Message);
+    }
             }
 
             return RtnValido;
