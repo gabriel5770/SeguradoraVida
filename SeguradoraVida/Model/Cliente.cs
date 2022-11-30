@@ -4,10 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
 using System.Configuration;
-using System.Web.UI;
-using System.Diagnostics;
-using System.Web.Optimization;
-using System.Text;
+using System.Data;
 
 namespace SeguradoraVida.Model
 {
@@ -21,28 +18,21 @@ namespace SeguradoraVida.Model
         public static string _cpf { get; set; }
         private string _senha { get; set; }
 
-        static string MyProperty { get; set; }
 
-        public Cliente(string nome, string email, string nomeSeguradora, DateTime dataNascimento, string telefone, string cpf , string senha)
+        public Cliente(string email, string telefone, string cpf)
         {
-            _nome = nome;
-            _email = email;
-            _nomeSeguradora = nomeSeguradora;
-            _dataNascimento = Convert.ToString(dataNascimento);
-            _telefone = telefone;
-            _cpf = cpf;
-            _senha = senha;
+            Cliente._email = email;
+            Cliente._telefone = telefone;
+            Cliente._cpf = cpf;
         }
-
         public Cliente(string cpf, string senha)
-        {   
+        {
             _cpf = cpf;
             _senha = senha;
         }
-        public Cliente()
-        {
 
-        }
+
+
 
         public bool VerificaLogin()
         {
@@ -56,7 +46,7 @@ namespace SeguradoraVida.Model
 
                 SqlCommand command = new SqlCommand(queryString, connection);
 
-                 connection.Open();
+                connection.Open();
                 command.ExecuteNonQuery();
 
 
@@ -77,23 +67,55 @@ namespace SeguradoraVida.Model
                             _nomeSeguradora = reader.GetString(5);
 
 
-
                             return true;
                         }
                         else
                         {
+
                         }
                     }
                     connection.Close();
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception(ex.Message);
-    }
+
+                }
             }
 
             return RtnValido;
         }
 
+        public bool AtualizaCadastroCliente()
+        {
+            bool rtnValido = false;
+            using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["conn"].ToString()))
+            {
+                using (var command = new SqlCommand
+                {
+                    Connection = connection,
+                    CommandType = CommandType.StoredProcedure
+                })
+                {
+                    command.CommandText = "Upd_WebForms_AtualizaCadastroCliente";
+                    try
+                    {
+                        command.Parameters.AddWithValue("@Telefone", _telefone);
+                        command.Parameters.AddWithValue("@Cpf", _cpf);
+                        command.Parameters.AddWithValue("@Email", _email);
+
+
+                        connection.Open();
+                        command.ExecuteNonQuery();
+
+                        rtnValido = true;
+                    }
+                    catch (SqlException ex)
+                    {
+
+                    }
+                }
+            }
+            return rtnValido;
+        }
     }
 }

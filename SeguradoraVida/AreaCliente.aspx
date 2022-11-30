@@ -28,60 +28,38 @@
 
 
         <div>
-            <asp:TextBox ID="txtNome" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtNome" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtCpf" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtCpf" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtTelefone" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtTelefone" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtEmail" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtEmail" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtDataNascimento" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtDataNascimento" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtSeguro" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtSeguro" Width="180px" Enabled="false" Columns="1" runat="server" />
+
+
 
 
             <label for="editar">Alterar</label>
-            <input type="checkbox" name="check" value="sim" id="editar" />
-            <input type="submit" value="Salvar Dados" />
+ <asp:CheckBox ID="checkHabilitaCombo" runat="server"
+                AutoPostBack="True"
+                TextAlign="Right"
+                 OnCheckedChanged="Check_Clicked"/>
+            <input type="submit" />
+
+            <asp:Button id="btnSalvaDados"
+            OnClick="SalvarDados_Click" 
+           runat="server"/>           
 
         </div>
-
-        <div class="container">
-            .
-        </div>
-
-        <script>
-            var editar = document.getElementById("editar");
-
-
-            // No click verifico se o editar esta marcado e desativo os 
-            // readOnly dos inputs type text
-            editar.addEventListener("click", function () {
-                if (this.checked) {
-                    toggleReadOnly(false);
-                } else {
-                    toggleReadOnly(true);
-                }
-            });
-
-            // Percorro  os elementos inputs type text e habilito/desabilito
-            function toggleReadOnly(bool) {
-                var inputs = document.getElementsByTagName("input");
-                for (var i = 0; i < inputs.length; i++) {
-                    if (inputs[i].type === "text") {
-                        inputs[i].readOnly = bool;
-                    }
-                }
-            }
-
-        </script>
-
 
         <div class="ImagemEleven">
             <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
@@ -103,5 +81,6 @@
             </ul>
         </footer>
     </form>
+    <script type="text/javascript" src="Js/AreaCliente.js"></script>
 </body>
 </html>

@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AreaCliente.aspx" />
+    <Content Include="Js\AreaCliente.js" />
     <Content Include="Contact.aspx" />
     <Content Include="Contato.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
