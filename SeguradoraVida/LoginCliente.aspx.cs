@@ -9,8 +9,10 @@ using System.Web.UI.WebControls;
 
 namespace SeguradoraVida
 {
+
     public partial class LoginCliente : System.Web.UI.Page
     {
+    public static string _cpf;
         protected void Page_Load(object sender, EventArgs e)
         {
              
@@ -23,10 +25,10 @@ namespace SeguradoraVida
 
         private void EfetuaLogin()
         {
-            string LoginCpf = txtCpf.Text;
+            _cpf = txtCpf.Text;
             string Senha = txtSenha.Text;
 
-            Cliente cliente = new Cliente(LoginCpf, Senha);
+            Cliente cliente = new Cliente(_cpf, Senha);
             if (cliente.VerificaLogin())
             {
                 Response.Redirect("AreaCliente.aspx");

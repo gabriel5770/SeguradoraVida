@@ -32,7 +32,7 @@ namespace SeguradoraVida.Model
         }
 
 
-
+        
 
         public bool VerificaLogin()
         {
@@ -47,11 +47,7 @@ namespace SeguradoraVida.Model
                 SqlCommand command = new SqlCommand(queryString, connection);
 
                 connection.Open();
-                command.ExecuteNonQuery();
-
-
-
-
+ 
                 try
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -59,14 +55,6 @@ namespace SeguradoraVida.Model
 
                         if (reader.Read())
                         {
-                            _nome = reader.GetString(0);
-                            _cpf = reader.GetString(1);
-                            _telefone = reader.GetString(2);
-                            _email = reader.GetString(3);
-                            _dataNascimento = reader.GetDateTime(4).ToString();
-                            _nomeSeguradora = reader.GetString(5);
-
-
                             return true;
                         }
                         else
