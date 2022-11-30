@@ -49,18 +49,41 @@
 
 
             <label for="editar">Alterar</label>
-            <asp:CheckBox ID="checkHabilitaCombo" runat="server"
-                AutoPostBack="True"
-                TextAlign="Right"
-                 OnCheckedChanged="Check_Clicked"/>
+            <input type="checkbox" name="check" value="sim" id="editar" />
             <input type="submit" value="Salvar Dados" />
-
 
         </div>
 
         <div class="container">
             .
         </div>
+
+        <script>
+            var editar = document.getElementById("editar");
+
+
+            // No click verifico se o editar esta marcado e desativo os 
+            // readOnly dos inputs type text
+            editar.addEventListener("click", function () {
+                if (this.checked) {
+                    toggleReadOnly(false);
+                } else {
+                    toggleReadOnly(true);
+                }
+            });
+
+            // Percorro  os elementos inputs type text e habilito/desabilito
+            function toggleReadOnly(bool) {
+                var inputs = document.getElementsByTagName("input");
+                for (var i = 0; i < inputs.length; i++) {
+                    if (inputs[i].type === "text") {
+                        inputs[i].readOnly = bool;
+                    }
+                }
+            }
+
+        </script>
+
 
         <div class="ImagemEleven">
             <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
