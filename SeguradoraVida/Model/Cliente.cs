@@ -21,10 +21,10 @@ namespace SeguradoraVida.Model
 
         public Cliente(string email, string telefone, string cpf)
         {
-            _email = email;
-            _telefone = telefone;
-            _cpf = cpf;
-         }
+            Cliente._email = email;
+            Cliente._telefone = telefone;
+            Cliente._cpf = cpf;
+        }
         public Cliente(string cpf, string senha)
         {
             _cpf = cpf;
@@ -64,7 +64,6 @@ namespace SeguradoraVida.Model
                             _nomeSeguradora = reader.GetString(5);
 
 
-
                             return true;
                         }
                         else
@@ -100,7 +99,7 @@ namespace SeguradoraVida.Model
                         command.Parameters.AddWithValue("@Telefone", _telefone);
                         command.Parameters.AddWithValue("@Cpf", _cpf);
                         command.Parameters.AddWithValue("@Email", _email);
-                        
+
 
                         connection.Open();
                         command.ExecuteNonQuery();
@@ -115,5 +114,5 @@ namespace SeguradoraVida.Model
             }
             return rtnValido;
         }
-    } 
+    }
 }
