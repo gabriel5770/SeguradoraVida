@@ -28,28 +28,38 @@
 
 
         <div>
-            <asp:TextBox ID="txtNome" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtNome" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtCpf" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtCpf" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtTelefone" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtTelefone" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtEmail" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtEmail" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtDataNascimento" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtDataNascimento" Width="180px" Enabled="false" Columns="1" runat="server" />
             <br>
             <br>
-            <asp:TextBox ID="txtSeguro" Width="180px" Enabled="false"  Columns="1" runat="server" />
+            <asp:TextBox ID="txtSeguro" Width="180px" Enabled="false" Columns="1" runat="server" />
+
+
 
 
             <label for="editar">Alterar</label>
-<asp:Button id="btnSalvaDados"
-            OnClick="SalvaDados_Click" 
-           runat="server"/>    
+            <asp:CheckBox ID="checkHabilitaCombo" runat="server"
+                AutoPostBack="True"
+                TextAlign="Right"
+                 OnCheckedChanged="Check_Clicked"/>
+            <input type="submit" value="Salvar Dados" />
+
+
+        </div>
+
+        <div class="container">
+            .
         </div>
 
         <div class="ImagemEleven">
@@ -72,5 +82,6 @@
             </ul>
         </footer>
     </form>
+    <script type="text/javascript" src="Js/AreaCliente.js"></script>
 </body>
 </html>
