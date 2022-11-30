@@ -18,6 +18,11 @@ namespace SeguradoraVida
 
         protected void logar_Click(object sender, EventArgs e)
         {
+            EfetuaLogin();
+        }
+
+        private void EfetuaLogin()
+        {
             string LoginCpf = txtCpf.Text;
             string Senha = txtSenha.Text;
 

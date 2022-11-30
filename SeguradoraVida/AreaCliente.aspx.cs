@@ -20,5 +20,15 @@ namespace SeguradoraVida
             txtSeguro.Text = Cliente._nomeSeguradora;
 
         }
+
+        protected void SalvaDados_Click(object sender, EventArgs e)
+        {
+            string Email = txtEmail.Text;
+            string Telefone = txtTelefone.Text;
+            string Cpf = txtCpf.Text;
+
+            Cliente cliente = new Cliente(Email, Telefone, Cpf);
+            cliente.AtualizaCadastroCliente();
+        }
     }
 }
