@@ -14,7 +14,7 @@ namespace SeguradoraVida.Model
         public static string _email { get; set; }
         public static string _nomeSeguradora { get; set; }
         public static string _dataNascimento { get; set; }
-        public static string _telefone { get; set; }
+        private  string _telefone { get; set; }
         public static string _cpf { get; set; }
         private string _senha { get; set; }
 
@@ -22,7 +22,7 @@ namespace SeguradoraVida.Model
         public Cliente(string email, string telefone, string cpf)
         {
             Cliente._email = email;
-            Cliente._telefone = telefone;
+            _telefone = telefone;
             Cliente._cpf = cpf;
         }
         public Cliente(string cpf, string senha)

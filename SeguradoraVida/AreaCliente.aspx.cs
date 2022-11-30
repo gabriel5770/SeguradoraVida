@@ -29,6 +29,8 @@ namespace SeguradoraVida
             else
             {
                 txtEmail.Enabled = false;
+                txtTelefone.Enabled = false;
+
             }
         }
 
@@ -38,10 +40,10 @@ namespace SeguradoraVida
             string Telefone = txtTelefone.Text;
             LoginCliente._cpf = txtCpf.Text;
 
-
             Cliente cliente = new Cliente(Email, Telefone, LoginCliente._cpf);
             cliente.AtualizaCadastroCliente();
         }
+
 
         private bool RetornaRegistroCliente()
         {
@@ -73,7 +75,6 @@ namespace SeguradoraVida
                             txtDataNascimento.Text= reader.GetDateTime(4).ToString();
                             txtSeguro.Text = reader.GetString(5);
 
-
                             return true;
                         }
                         else
@@ -88,7 +89,6 @@ namespace SeguradoraVida
 
                 }
             }
-
             return RtnValido;
         }
     }
