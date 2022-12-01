@@ -23,7 +23,10 @@ namespace SeguradoraVida
             string Mensagem = txtCelular.Text;
 
             ContatoCliente contato = new ContatoCliente(Nome,Email,NumeroCelular,Mensagem);
-            contato.EnviaContato();
+            if (contato.EnviaContato())
+            {
+                Response.Write("<script>alert('Enviamos a sua dúvida!');</script>");
+            }
         }
     }
 }

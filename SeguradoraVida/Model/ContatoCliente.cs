@@ -23,7 +23,7 @@ namespace SeguradoraVida.Model
             _mensagem = mensagem;
         }
 
-        public void EnviaContato()
+        public bool EnviaContato()
         {
             bool rtnValido = false;
            
@@ -50,8 +50,9 @@ namespace SeguradoraVida.Model
                     }
                     catch (SqlException ex)
                     {
-
+                       
                     }
+                    return rtnValido;
                 }
             }
         }
