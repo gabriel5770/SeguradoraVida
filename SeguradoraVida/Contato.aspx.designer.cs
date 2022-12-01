@@ -42,13 +42,13 @@ namespace SeguradoraVida
         protected global::System.Web.UI.WebControls.TextBox txtCelular;
 
         /// <summary>
-        /// Controle TextBox1.
+        /// Controle txtMensagem.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtMensagem;
 
         /// <summary>
         /// Controle btnEnviar.

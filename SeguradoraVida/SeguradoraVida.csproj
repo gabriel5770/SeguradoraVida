@@ -268,7 +268,7 @@
       <DependentUpon>LoginCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\Cliente.cs" />
-    <Compile Include="Model\Contato.cs" />
+    <Compile Include="Model\ContatoCliente.cs" />
     <Compile Include="Morte.aspx.cs">
       <DependentUpon>Morte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

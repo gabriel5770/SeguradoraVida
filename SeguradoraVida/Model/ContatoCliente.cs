@@ -8,14 +8,14 @@ using System.Web;
 
 namespace SeguradoraVida.Model
 {
-    public class Contato
+    public class ContatoCliente
     {
         private string _nome { get; set; }
         private string _email { get; set; }
         private string _celular { get; set; }
         private string _mensagem { get; set; }
 
-        public Contato(string nome, string email, string celular, string mensagem)
+        public ContatoCliente(string nome, string email, string celular, string mensagem)
         {
             _nome = nome;
             _email = email;
