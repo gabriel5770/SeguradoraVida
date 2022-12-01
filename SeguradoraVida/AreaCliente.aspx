@@ -53,7 +53,6 @@
                 AutoPostBack="True"
                 TextAlign="Right"
                  OnCheckedChanged="Check_Clicked"/>
-            <input type="submit" />
 
             <asp:Button id="btnSalvaDados"
             OnClick="SalvarDados_Click" 

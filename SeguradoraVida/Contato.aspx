@@ -16,109 +16,110 @@
 </head>
 
 <body>
-  <header>
-    <div class="navigation">
-        <ul>
-        <li><a href="Default.aspx">Home</a></li>
-        <li><a href="Contato.aspx">Contato</a></li>
-        <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
-        <li><a href="Servico.aspx">Serviços</a> </li>
-    </ul>
-   </header>
+    <header>
+        <div class="navigation">
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Contato.aspx">Contato</a></li>
+                <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+                <li><a href="Servico.aspx">Serviços</a> </li>
+            </ul>
+    </header>
 
-</div>
-
-<div class="ImagemTelefone">
-  <img src="Imagens/Telefone01.png" width="20px" height="20px" id="imgg01">
-</div>
-
-
-<div class="container-fluid">
-    
-  </div>
-<br>
-<br>
-<form action="#" method="POST" class=formContato>
-  <fieldset>
-  
-    <div>
-      <label>Nome Completo</label>
-      
-      </br>
-   
-      <input type="Nome" required placeholder="Digite seu nome">
-      
     </div>
+
+    <div class="ImagemTelefone">
+        <img src="Imagens/Telefone01.png" width="20px" height="20px" id="imgg01">
+    </div>
+
+
+    <div class="container-fluid">
+    </div>
+    <br>
+        <br>
+            <form action="#" method="POST" class="formContato" runat="server">
+                <fieldset>
+
+                    <div>
+                        <label>Nome Completo</label>
+        </br>
+
+        <asp:TextBox ID="txtNome" Width="180px" Columns="1" runat="server" />
+
+        </div>
 
     <div>
         <label>E-mail</label>
-      
-      </br>
-        <input type="e-mail" required placeholder="Digite seu e-mail">
-      
+    </br>
+    <asp:TextBox ID="txtEmail" Width="180px"  Columns="1" runat="server" />
+
 
     </div>
 
     <div>
         <label>Celular</label>
         </br>             
-        <input type="telefone" required placeholder="Digite seu telefone">
-      
+           <asp:TextBox ID="txtCelular" Width="180px"   Columns="1" runat="server" />
+
     </div>
-              
-    <label form="Mensagem">Mensagem</label>           
+
+    <label form="Mensagem">Mensagem</label>
     </br>
-    <textarea style="resize: none" name="Mgm" cols="46" rows="7"></textarea>
+           <asp:TextBox ID="TextBox1" Width="250px" Height="100px"   Columns="2" runat="server" />
     </br>
     </br>
 
-        <input type="button" id="btnEnviarContato" value="Enviar" runat="server"/>
-
-  </fieldset>
+    <asp:Button ID="btnEnviar"
+        OnClick="btnEnviar_Click"
+        runat="server" />
+    </fieldset>
 </form>  
 
   <div class="Contato">
-    <br>
-    <br>
-    <h1>Contato</h1>
-    <h2>Ligue em nosso número de telefone! <br>Ou envie uma mensagem detalhada que <br> entraremos em contato!</h2>
-</div>
-
-  <div class="container">
-    
+      <br>
+      <br>
+      <h1>Contato</h1>
+      <h2>Ligue em nosso número de telefone!
+          <br>
+          Ou envie uma mensagem detalhada que
+          <br>
+          entraremos em contato!</h2>
   </div>
 
-  <div class="container02">
-    
-  </div>
+    <div class="container">
+    </div>
 
-  <div class="container03">
-    55+ (11) 96181-6387
-  </div>
+    <div class="container02">
+    </div>
 
-  <div class="container04">
-    Dreamlife@hotmail.com
-  </div>
+    <div class="container03">
+        55+ (11) 96181-6387
+    </div>
 
-  <div class="container05">
-    Alameda araguaia, 5537
-  </div>
+    <div class="container04">
+        Dreamlife@hotmail.com
+    </div>
 
-  <div class="ImagemEleven">
-    <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
-</div>
+    <div class="container05">
+        Alameda araguaia, 5537
+    </div>
 
-<div class="ImagemTwelve">
-    <img src="Imagens/App.jpg" width="300" height="100" id="img12">
-</div>
-  
+    <div class="ImagemEleven">
+        <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
+    </div>
 
-  <footer>
-    <ul><br>
-        <li><b>Links rápidos</b></li>
-        <br>
-        <li><a href="TermosUso.aspx">Termo de uso ></a></li>
-        <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
-        <li><a href="Servico.aspx">Serviços></a></li>
-    </ul>
+    <div class="ImagemTwelve">
+        <img src="Imagens/App.jpg" width="300" height="100" id="img12">
+    </div>
+
+
+    <footer>
+        <ul>
+            <br>
+            <li><b>Links rápidos</b></li>
+            <br>
+            <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+            <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+            <li><a href="Servico.aspx">Serviços></a></li>
+        </ul>
     </footer>
