@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
- using SeguradoraVida.Model;
+using SeguradoraVida.Model;
 
 namespace SeguradoraVida
 {
@@ -19,14 +19,23 @@ namespace SeguradoraVida
         {
             string Nome = txtNome.Text;
             string Email = txtEmail.Text;
-            string NumeroCelular = txtEmail.Text;
-            string Mensagem = txtCelular.Text;
+            string NumeroCelular = txtCelular.Text;
+            string Mensagem = txtMensagem.Text;
 
-            ContatoCliente contato = new ContatoCliente(Nome,Email,NumeroCelular,Mensagem);
+            ContatoCliente contato = new ContatoCliente(Nome, Email, NumeroCelular, Mensagem);
             if (contato.EnviaContato())
             {
                 Response.Write("<script>alert('Enviamos a sua dúvida!');</script>");
+                LimpaCampos();
             }
+        }
+
+        private void LimpaCampos()
+        {
+            txtNome.Text = "";
+            txtEmail.Text = "";
+            txtCelular.Text = "";
+            txtMensagem.Text = "";
         }
     }
 }
