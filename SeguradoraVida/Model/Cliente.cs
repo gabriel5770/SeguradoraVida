@@ -14,7 +14,7 @@ namespace SeguradoraVida.Model
         public static string _email { get; set; }
         public static string _nomeSeguradora { get; set; }
         public static string _dataNascimento { get; set; }
-        public static string _telefone { get; set; }
+        private  string _telefone { get; set; }
         public static string _cpf { get; set; }
         private string _senha { get; set; }
 
@@ -22,7 +22,7 @@ namespace SeguradoraVida.Model
         public Cliente(string email, string telefone, string cpf)
         {
             Cliente._email = email;
-            Cliente._telefone = telefone;
+            _telefone = telefone;
             Cliente._cpf = cpf;
         }
         public Cliente(string cpf, string senha)
@@ -32,7 +32,7 @@ namespace SeguradoraVida.Model
         }
 
 
-
+        
 
         public bool VerificaLogin()
         {
@@ -47,11 +47,7 @@ namespace SeguradoraVida.Model
                 SqlCommand command = new SqlCommand(queryString, connection);
 
                 connection.Open();
-                command.ExecuteNonQuery();
-
-
-
-
+ 
                 try
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -59,14 +55,6 @@ namespace SeguradoraVida.Model
 
                         if (reader.Read())
                         {
-                            _nome = reader.GetString(0);
-                            _cpf = reader.GetString(1);
-                            _telefone = reader.GetString(2);
-                            _email = reader.GetString(3);
-                            _dataNascimento = reader.GetDateTime(4).ToString();
-                            _nomeSeguradora = reader.GetString(5);
-
-
                             return true;
                         }
                         else
