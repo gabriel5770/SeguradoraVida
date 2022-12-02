@@ -65,7 +65,7 @@
 
     <label form="Mensagem">Mensagem</label>
     </br>
-           <asp:TextBox ID="txtMensagem" Width="250px" Height="100px"   Columns="2" runat="server" />
+           <asp:TextBox ID="txtMensagem" TextMode="MultiLine" Width="250px" Height="100px"   Columns="1" runat="server" />
     </br>
     </br>
 
