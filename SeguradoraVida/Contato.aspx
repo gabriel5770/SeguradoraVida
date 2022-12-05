@@ -58,7 +58,7 @@
                             <asp:TextBox ID="txtCelular" Width="180px"   Columns="1" runat="server" />
                         </div>
                         <div>
-                            <label form="Mensagem">Mensagem</label><br/>
+                            <label>Mensagem</label><br/>
                              <asp:TextBox ID="txtMensagem" TextMode="MultiLine" Width="250px" Height="100px"   Columns="1" runat="server" />
                         </div>
                          <asp:Button ID="btnEnviar" OnClick="btnEnviar_Click" Text="Enviar" runat="server" />

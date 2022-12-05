@@ -15,5 +15,15 @@ namespace SeguradoraVida
               
 
         }
+
+        protected void btnEnviar_Click(object sender , EventArgs e)
+        {
+            string nome = txtNome.Text;
+            string email = txtEmail.Text;
+            string telefone = txtTelefone.Text;
+            string cpf = txtCpf.Text;
+            string dataNascimento = txtData.Text;
+
+        }
     }
 }

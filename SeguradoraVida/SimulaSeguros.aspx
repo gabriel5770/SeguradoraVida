@@ -14,117 +14,108 @@
 </head>
 <body>
 
-  <div class="navigation">
-      <ul>
-        <li><a href="Default.aspx">Home</a></li>
-        <li><a href="Contato.aspx">Contato</a></li>
-        <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
-        <li><a href="Servico.aspx">Serviços</a> </li>
-    </ul>
-</div>
+    <div class="navigation">
+        <ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="Contato.aspx">Contato</a></li>
+            <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+            <li><a href="Servico.aspx">Serviços</a> </li>
+        </ul>
+    </div>
 
-<div class="Familia">
-    <img src="Imagens/Familia.jpg" width="500" height="400" id="img01">
-</div>
+    <div class="Familia">
+        <img src="Imagens/Familia.jpg" width="500" height="400" id="img01">
+    </div>
 
-<div class="Segurodevida">
-    <h3> Contrate um <b>Seguro de Vida!</b></h3>
-    
-    A Dream Life tem o produto ideal para as suas necessidades</div>
+    <div class="Segurodevida">
+        <h3>Contrate um <b>Seguro de Vida!</b></h3>
+
+        A Dream Life tem o produto ideal para as suas necessidades
+    </div>
 
     <div class="Ola">
         .
     </div>
 
-    <form action="">
+    <form action="" runat="server">
 
         <fieldset>
-          <legend><b>Simular Seguro</b></legend>
+            <legend><b>Simular Seguro</b></legend>
 
-          <div class="">                
-          <label>Nome</label>
-          
-          </br>
-          <input type="nome" required placeholder="Nome completo">                
-          </div>
-        
-          <div>
-            <label>Data Nascimento</label>
-          </br>             
-            <input type="date" required>                
-          </div>
+            <div class="">
+                <label>Nome</label>
 
-          <div>
-            <label>E-mail</label>
-          </br>
+                </br>
+                             <asp:TextBox ID="txtNome" Width="180px" Columns="1" runat="server" />
+            </div>
+
+            <div>
+                <label>Data Nascimento</label>
+                </br>             
+                             <asp:TextBox type="date" ID="txtData" Width="180px" Columns="1" runat="server" />
+            </div>
+
+            <div>
+                <label>E-mail</label>
+                </br>
                        
-            <input type="text" required placeholder="Pessoa@hotmail.com">
-             
-          </div>
-        
-          <div>
-            <label>Telefone</label>
-            </br>
+                             <asp:TextBox ID="txtEmail" Width="180px" Columns="1" runat="server" />
+
+            </div>
+
+            <div>
+                <label>Telefone</label>
+                </br>
             
-            <input type="text" required placeholder="(12)3456-78910">
-              
-          </div>
-                    
-          <div>
-            <label>CPF</label>
+                             <asp:TextBox ID="txtTelefone" Width="180px" Columns="1" runat="server" />
+
+            </div>
+
+            <div>
+                <label>CPF</label>
+                <br>
+                <asp:TextBox ID="txtCpf" Width="180px" Columns="1" runat="server" />
+
+
+            </div>
+
+            <div>
+                Sexo
             <br>
-            <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx"
-		        	pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-		        	title="Digite um CPF no formato: xxx.xxx.xxx-xx">
-            
-          </div>
+                <asp:RadioButton ID="RadMasculino" Text="Masculino" Checked="True" GroupName="RadioGroup1" runat="server" /><br />
+                <asp:RadioButton ID="RadFeminino" Text="Feminino" Checked="True" GroupName="RadioGroup1" runat="server" /><br />
+            </div>
+            <div>
+                Seguro<br>
+                <asp:RadioButton ID="RadInvalidez" Text="Invalidez" Checked="True" GroupName="RadioGroup2" runat="server" /><br />
+                <asp:RadioButton ID="RadMorteAcidental" Text="Morte Acidental" Checked="True" GroupName="RadioGroup2" runat="server" /><br />
+                <asp:RadioButton ID="RadDoencaHereditaria" Text="Doença Hereditária" Checked="True" GroupName="RadioGroup2" runat="server" /><br />
+                <br />
+                         <asp:Button ID="btnEnviar" OnClick="btnEnviar_Click" Text="Enviar" runat="server" />
+                <div>
 
-          <div>
-            Sexo
-            <br>
-           <input type="radio" required name="sexo" value="M">
-           Masculino
-           <input type="radio" required name="sexo" value="F">
-           Feminino
-         </div>
+                    <div class="container">
+                    </div>
+                    <div class="oii">
+                    </div>
 
-         <div>
-            Seguro<br>
-            <input name="Seguro" type="radio" required id="I">
-            <label for="Invalido">Invalidez</label>
-          
-            <input name="Seguro" type="radio" required id="M">
-            <label for="Morte">Morte acidental</label>
-          <br>
-             <input name="Seguro" type="radio"required id="D">
-            <label for="Doença">Doença hereditaria</label>
+                </div>
+                <div class="ImagemEleven">
+                    <img src="Imagens/Icones.jpg" width="290" height="100" id="img11">
+                </div>
 
-          <br />
+                <div class="ImagemTwelve">
+                    <img src="Imagens/App.jpg" width="290" height="100" id="img12">
+                </div>
 
-        <input type="button" id="btnEnviarSimulacao" value="Enviar" runat="server"/>
-      <div>
-
-        <div class="container">         
-          </div>
-          <div class="oii">
-           
-          </div>
-                  
-        </div>
-        <div class="ImagemEleven">
-          <img src="Imagens/Icones.jpg" width="290" height="100" id="img11">
-      </div>
-      
-      <div class="ImagemTwelve">
-          <img src="Imagens/App.jpg" width="290" height="100" id="img12">
-      </div>
-      
-          <footer>
-            <ul><br>
-            <li><b>Links rápidos</b></li>
-            <br>
-            <li><a href="TermosUso.aspx">Termo de uso ></a></li>
-            <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
-            <li><a href="Servico.aspx">Serviços></a></li>
-            </ul>
-            </footer>
+                <footer>
+                    <ul>
+                        <br>
+                        <li><b>Links rápidos</b></li>
+                        <br>
+                        <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+                        <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+                        <li><a href="Servico.aspx">Serviços></a></li>
+                    </ul>
+                </footer>
+    </form>
