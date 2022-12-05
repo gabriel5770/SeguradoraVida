@@ -44,6 +44,7 @@ namespace SeguradoraVida
             cliente.AtualizaCadastroCliente();
         }
 
+   
 
         private bool RetornaRegistroCliente()
         {
