@@ -56,6 +56,11 @@ namespace SeguradoraVida
             if (VerificaCampos())
             {
                 Simular sm = new Simular(nome, dataNascimento, email, telefone, cpf, sexo, seguro);
+                if (sm.EnviaSimulacaoSeguro())
+                {
+                    Response.Write("<script>alert('Simulação enviada!');</script>");
+                    LimpaCombo();
+                }
             }
 
         }
@@ -69,6 +74,15 @@ namespace SeguradoraVida
                 return false;
             }
             return true;
+        }
+
+        private void LimpaCombo()
+        {
+            txtCpf.Text = "";
+            txtData.Text = "";
+            txtEmail.Text = "";
+            txtNome.Text = "";
+            txtTelefone.Text = "";
         }
     }
 }
