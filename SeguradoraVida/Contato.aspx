@@ -19,106 +19,72 @@
   <header>
     <div class="navigation">
         <ul>
-        <li><a href="Default.aspx">Home</a></li>
-        <li><a href="Contato.aspx">Contato</a></li>
-        <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
-        <li><a href="Servico.aspx">Serviços</a> </li>
-    </ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="Contato.aspx">Contato</a></li>
+            <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+            <li><a href="Servico.aspx">Serviços</a> </li>
+        </ul>
+    </div>
    </header>
+    <main>
+        <div class="col-1">
+            <div class="Contato"><br><br>
+                <h1>Contato</h1>
+                <h2>Ligue em nosso número de telefone! <br>Ou envie uma mensagem detalhada que <br> entraremos em contato!</h2>
+                <div class="contato-info">
+                    <div class="container03" style="display: flex; justify-content: space-around;">
+                        <img src="Imagens/Telefone01.png" width="20" height="20" id="imgg01">
+                        55+ (11) 96181-6387
+                    </div>
+                    <div class="container04">Dreamlife@hotmail.com</div>
+                    <div class="container05">Alameda araguaia, 5537</div>
+                </div>
+            </div>
+        </div>
+       <div class="col-2">
+            <div>
+                <form action="#" method="POST" class=formContato>
+                    <fieldset>
+                        <div>
+                            <label>Nome Completo</label><br/>
+                            <input type="Nome" required placeholder="Digite seu nome">
+                        </div>
+                        <div>
+                            <label>E-mail</label><br/>
+                            <input type="email" required placeholder="Digite seu e-mail">
+                        </div>
+                        <div>
+                            <label>Celular</label><br/>             
+                            <input type="text" required placeholder="Digite seu telefone">
+                        </div>
+                        <div>
+                            <label form="Mensagem">Mensagem</label><br/>
+                            <textarea style="resize: none" name="Mgm" cols="46" rows="7"></textarea><br/><br/>
+                        </div>
+                        <input type="button" id="btnEnviarContato" value="Enviar" runat="server"/>
+                    </fieldset>
+                </form>  
+            </div>
+       </div>
+    </main>
+    <div class="container-fluid"></div><br/><br/>
+    <div class="container"></div>
+    <div class="container02"></div>
 
-</div>
-
-<div class="ImagemTelefone">
-  <img src="Imagens/Telefone01.png" width="20px" height="20px" id="imgg01">
-</div>
-
-
-<div class="container-fluid">
+    <footer>
+        <div class="ImagemEleven">
+            <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
+        </div>
     
-  </div>
-<br>
-<br>
-<form action="#" method="POST" class=formContato>
-  <fieldset>
-  
-    <div>
-      <label>Nome Completo</label>
-      
-      </br>
-   
-      <input type="Nome" required placeholder="Digite seu nome">
-      
-    </div>
-
-    <div>
-        <label>E-mail</label>
-      
-      </br>
-        <input type="e-mail" required placeholder="Digite seu e-mail">
-      
-
-    </div>
-
-    <div>
-        <label>Celular</label>
-        </br>             
-        <input type="telefone" required placeholder="Digite seu telefone">
-      
-    </div>
-              
-    <label form="Mensagem">Mensagem</label>           
-    </br>
-    <textarea style="resize: none" name="Mgm" cols="46" rows="7"></textarea>
-    </br>
-    </br>
-
-        <input type="button" id="btnEnviarContato" value="Enviar" runat="server"/>
-
-  </fieldset>
-</form>  
-
-  <div class="Contato">
-    <br>
-    <br>
-    <h1>Contato</h1>
-    <h2>Ligue em nosso número de telefone! <br>Ou envie uma mensagem detalhada que <br> entraremos em contato!</h2>
-</div>
-
-  <div class="container">
-    
-  </div>
-
-  <div class="container02">
-    
-  </div>
-
-  <div class="container03">
-    55+ (11) 96181-6387
-  </div>
-
-  <div class="container04">
-    Dreamlife@hotmail.com
-  </div>
-
-  <div class="container05">
-    Alameda araguaia, 5537
-  </div>
-
-  <div class="ImagemEleven">
-    <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
-</div>
-
-<div class="ImagemTwelve">
-    <img src="Imagens/App.jpg" width="300" height="100" id="img12">
-</div>
-  
-
-  <footer>
-    <ul><br>
-        <li><b>Links rápidos</b></li>
-        <br>
-        <li><a href="TermosUso.aspx">Termo de uso ></a></li>
-        <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
-        <li><a href="Servico.aspx">Serviços></a></li>
-    </ul>
+        <div class="ImagemTwelve">
+            <img src="Imagens/App.jpg" width="300" height="100" id="img12">
+        </div>
+        <ul>
+            <li><b>Links rápidos</b></li>
+            <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+            <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+            <li><a href="Servico.aspx">Serviços></a></li>
+        </ul>
     </footer>
+</body>
+</html>
