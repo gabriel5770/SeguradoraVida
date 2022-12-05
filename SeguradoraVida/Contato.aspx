@@ -43,25 +43,25 @@
         </div>
        <div class="col-2">
             <div>
-                <form action="#" method="POST" class=formContato>
+                <form action="#" method="POST" class="formContato" runat="server">
                     <fieldset>
                         <div>
                             <label>Nome Completo</label><br/>
-                            <input type="Nome" required placeholder="Digite seu nome">
+                             <asp:TextBox ID="txtNome" Width="180px" Columns="1" runat="server" />
                         </div>
                         <div>
                             <label>E-mail</label><br/>
-                            <input type="email" required placeholder="Digite seu e-mail">
+                             <asp:TextBox ID="txtEmail" Width="180px"  Columns="1" runat="server" />
                         </div>
                         <div>
                             <label>Celular</label><br/>             
-                            <input type="text" required placeholder="Digite seu telefone">
+                            <asp:TextBox ID="txtCelular" Width="180px"   Columns="1" runat="server" />
                         </div>
                         <div>
                             <label form="Mensagem">Mensagem</label><br/>
-                            <textarea style="resize: none" name="Mgm" cols="46" rows="7"></textarea><br/><br/>
+                             <asp:TextBox ID="txtMensagem" TextMode="MultiLine" Width="250px" Height="100px"   Columns="1" runat="server" />
                         </div>
-                        <input type="button" id="btnEnviarContato" value="Enviar" runat="server"/>
+                         <asp:Button ID="btnEnviar" OnClick="btnEnviar_Click" Text="Enviar" runat="server" />
                     </fieldset>
                 </form>  
             </div>
