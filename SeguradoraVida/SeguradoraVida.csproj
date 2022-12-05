@@ -269,6 +269,7 @@
     </Compile>
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\ContatoCliente.cs" />
+    <Compile Include="Model\Simular.cs" />
     <Compile Include="Morte.aspx.cs">
       <DependentUpon>Morte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
