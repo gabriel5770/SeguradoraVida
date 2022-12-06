@@ -59,7 +59,7 @@
                         </div>
                         <div>
                             <label>Mensagem</label><br/>
-                             <asp:TextBox ID="txtMensagem" TextMode="MultiLine" Width="250px" Height="100px" Columns="1" runat="server" />
+                             <asp:TextBox ID="txtMensagem" MaxLength="1000" TextMode="MultiLine" Width="250px" Height="100px" Columns="1" runat="server" />
                         </div>
                          <asp:Button ID="btnEnviar" OnClick="btnEnviar_Click" Text="Enviar" runat="server" />
                     </fieldset>
