@@ -41,7 +41,11 @@ namespace SeguradoraVida
             LoginCliente._cpf = txtCpf.Text;
 
             Cliente cliente = new Cliente(Email, Telefone, LoginCliente._cpf);
-            cliente.AtualizaCadastroCliente();
+            if (cliente.AtualizaCadastroCliente())
+            {
+                Response.Write("<script>alert('Perfil atualizado!');</script>");
+
+            }
         }
 
    
