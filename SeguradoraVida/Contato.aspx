@@ -55,11 +55,11 @@
                         </div>
                         <div>
                             <label>Celular</label><br/>             
-                            <asp:TextBox ID="txtCelular" Width="180px"   Columns="1" runat="server" />
+                            <asp:TextBox ID="txtCelular" Width="180px" MaxLength="11" Columns="1" runat="server" />
                         </div>
                         <div>
                             <label>Mensagem</label><br/>
-                             <asp:TextBox ID="txtMensagem" TextMode="MultiLine" Width="250px" Height="100px"   Columns="1" runat="server" />
+                             <asp:TextBox ID="txtMensagem" TextMode="MultiLine" Width="250px" Height="100px" Columns="1" runat="server" />
                         </div>
                          <asp:Button ID="btnEnviar" OnClick="btnEnviar_Click" Text="Enviar" runat="server" />
                     </fieldset>
