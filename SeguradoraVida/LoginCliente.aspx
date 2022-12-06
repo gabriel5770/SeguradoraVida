@@ -29,8 +29,8 @@
                 <h3 style="color: #1b86dd">LOGIN</h3>
                 <h4>Preencha para continuar.</h4>
                 <div class="fields" style="margin-top: 2rem;">
-                    <asp:TextBox ID="txtCpf" Columns="1" runat="server"  placeholder="Digite seu CPF"/><br><br>
-                    <asp:TextBox ID="txtSenha" Columns="1" runat="server" placeholder="Digite sua senha"/><br><br><br />
+                    <asp:TextBox ID="txtCpf" Columns="1" runat="server" placeholder="Digite seu CPF"/><br><br>
+                    <asp:TextBox ID="txtSenha" Columns="1" runat="server" TextMode="Password" placeholder="Digite sua senha"/><br><br><br />
                 </div>
                 <div style="display: flex; flex-direction: column; align-items: center;">
                     <asp:Button id="btnLogar" OnClick="logar_Click" runat="server" Text="Entrar"/>            
