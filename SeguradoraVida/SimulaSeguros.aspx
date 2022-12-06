@@ -67,14 +67,14 @@
                 <label>Telefone</label>
                 </br>
             
-                             <asp:TextBox ID="txtTelefone" Width="180px" Columns="1" runat="server" />
+                             <asp:TextBox ID="txtTelefone" MaxLength="11" Width="180px" Columns="1" runat="server" />
 
             </div>
 
             <div>
                 <label>CPF</label>
                 <br>
-                <asp:TextBox ID="txtCpf" Width="180px" Columns="1" runat="server" />
+                <asp:TextBox ID="txtCpf" MaxLength="11" Width="180px" Columns="1" runat="server" />
 
 
             </div>
