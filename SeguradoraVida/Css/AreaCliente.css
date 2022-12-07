@@ -18,120 +18,115 @@ body {
     filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#CCCCCC', EndColorStr='#000000');
 }
 
-    .navigation ul li {
-        color: white;
-        padding: 20px;
-        display: inline-block;
-        text-decoration: none;
-        transition: background .4s;
-        font-size: larger;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+.navigation ul li {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-        .navigation ul li a {
-            text-decoration: none;
-            color: white;
-        }
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+}
 
-        .navigation ul li:hover {
-            background-color: rgb(218, 211, 211);
-            color: rgb(14, 96, 204);
-        }
+.navigation ul li:hover {
+    background-color: rgb(218, 211, 211);
+    color: rgb(14, 96, 204);
+}
 
 input[type=text]:-moz-read-only {
-    position: absolute;
     background-color: #dddddd;
 }
 
 input[type=text]:read-only {
-    position: absolute;
     background-color: #dddddd;
-}
-
-input[type=checkbox] {
-    position: absolute;
-    right: 67%;
-    transform: translateY(163px);
 }
 
 input[type=submit] {
-    position: absolute;
-    transform: translateY(110px);
-    right: 57;
     background-color: #1b86dd;
     color: white;
-    border-style: none;
-    width: 110px;
-    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    width: 15rem;
+    transition: 0.4s;
 }
 
-input {
-    position: absolute;
-    right: 55%;
-    transform: translateY(72px);
+input[type=submit]:hover {
+    transform: translateX(5px);
+
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background-color: #e6e8ea;
     border-radius: 4px;
-    border: 1px solid rgb(0, 0, 0);
+    border: #ffffff;
+    width: 20rem;
+    height: 35px;
+    margin-top: 0.5rem;
 }
 
-#Oii {
-    position: absolute;
-    right: 55%;
-    background-color: #dddddd;
-}
-
-label {
-    position: absolute;
-    right: 53%;
-    transform: translateY(155.7px);
+main {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
 }
 
 .container {
-    position: absolute;
-    transform: translateY(-190px);
-    right: 50%;
-    z-index: -1;
-    color: white;
-    border: 2px solid rgb(0, 0, 0);
+    background: transparent;
+    border: 2px solid #1b86dd;
     border-radius: 3px;
-    width: 300px;
-    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 #img11 {
     position: absolute;
     right: 0%;
-    transform: translateY(369px);
     z-index: 1;
-    padding: 10px;
+    padding: auto;
 }
 
 #img12 {
     position: absolute;
     right: 0%;
-    transform: translateY(290px);
     z-index: 1;
-    padding: 10px;
+    padding: auto;
 }
 
 
 footer {
     position: absolute;
-    transform: translateY(300px);
+    bottom: 0;
     background-color: rgb(0, 0, 0);
     color: #FFF;
-    right: 18%;
-    width: 1250px;
-    height: 160px;
-    z-index: 2;
+    width: 100%;
+    height: 180px;
 }
 
-    footer ul {
-        text-decoration: none;
-        list-style: none;
-    }
+footer ul {
+    text-decoration: none;
+    list-style: none;
+}
 
-        footer ul a {
-            text-decoration: none;
-            list-style: none;
-            color: #FFF;
-        }
+footer ul a {
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+}

@@ -13,73 +13,54 @@
 
 </head>
 <body>
-    <form runat="server">
+    <header>
+        <div class="navigation">
 
-        <header>
-            <div class="navigation">
-
-                <ul>
-                    <li><a href="Default.aspx">Home</a></li>
-                    <li><a href="Contato.aspx">Contato</a></li>
-                    <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
-                    <li><a href="Servico.aspx">Serviços</a> </li>
-                </ul>
-        </header>
-
-
-        <div>
-            <asp:TextBox ID="txtNome" Width="180px" Enabled="false" Columns="1" runat="server" />
-            <br>
-            <br>
-            <asp:TextBox ID="txtCpf" Width="180px" Enabled="false" Columns="1" runat="server" />
-            <br>
-            <br>
-            <asp:TextBox ID="txtTelefone" Width="180px" Enabled="false" Columns="1" runat="server" />
-            <br>
-            <br>
-            <asp:TextBox ID="txtEmail" Width="180px" Enabled="false" Columns="1" runat="server" />
-            <br>
-            <br>
-            <asp:TextBox ID="txtDataNascimento" Width="180px" Enabled="false" Columns="1" runat="server" />
-            <br>
-            <br>
-            <asp:TextBox ID="txtSeguro" Width="180px" Enabled="false" Columns="1" runat="server" />
-
-
-
-
-            <label for="editar">Alterar</label>
- <asp:CheckBox ID="checkHabilitaCombo" runat="server"
-                AutoPostBack="True"
-                TextAlign="Right"
-                 OnCheckedChanged="Check_Clicked"/>
-
-            <asp:Button id="btnSalvaDados"
-            OnClick="SalvarDados_Click" 
-           runat="server"/>           
-
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Contato.aspx">Contato</a></li>
+                <li><a href="LoginCliente.aspx">Area do Cliente</a></li>
+                <li><a href="Servico.aspx">Serviços</a> </li>
+            </ul>
         </div>
-
+    </header>
+    <main>
+	    <form name="cadastro" runat="server" class="container">
+            <h3 style="color: #1b86dd">ÁREA DO CLIENTE</h3>
+            <h4>Preencha para continuar.</h4>
+            <div class="fields" style="margin-top: 2rem;">
+                <asp:TextBox ID="txtNome" Enabled="false" Columns="1" runat="server" CssClass="input" />
+                <asp:TextBox ID="txtCpf" Enabled="false" Columns="1" runat="server" CssClass="input"/>
+                <asp:TextBox ID="txtTelefone" Enabled="false" Columns="1" runat="server" CssClass="input" />
+                <asp:TextBox ID="txtEmail" Enabled="false" Columns="1" runat="server" CssClass="input"/>
+                <asp:TextBox ID="txtDataNascimento" Enabled="false" Columns="1" runat="server" CssClass="input"/>
+                <asp:TextBox ID="txtSeguro" Enabled="false" Columns="1" runat="server" CssClass="input" />
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="display: flex; align-items: center; margin:0.5rem;">
+                    <asp:CheckBox ID="checkHabilitaCombo" runat="server" AutoPostBack="True" TextAlign="Right" OnCheckedChanged="Check_Clicked"/>        
+                    <label for="editar" style="margin-left: 0.5rem;">Alterar</label>
+                </div>
+                <asp:Button id="btnSalvaDados" OnClick="SalvarDados_Click"  runat="server" Text="Salvar"/>           
+            </div>
+	    </form>
+    </main>
+    <footer>
         <div class="ImagemEleven">
             <img src="Imagens/Icones.jpg" width="300" height="100" id="img11">
         </div>
-
         <div class="ImagemTwelve">
             <img src="Imagens/App.jpg" width="300" height="100" id="img12">
         </div>
-
-
-        <footer>
-            <ul>
-                <br>
-                <li><b>Links rápidos</b></li>
-                <br>
-                <li><a href="TermosUso.aspx">Termo de uso ></a></li>
-                <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
-                <li><a href="Servico.aspx">Serviços></a></li>
-            </ul>
-        </footer>
-    </form>
+        <ul>
+            <br>
+            <li><b>Links rápidos</b></li>
+            <br/>
+            <li><a href="TermosUso.aspx">Termo de uso ></a></li>
+            <li><a href="Lgpd.aspx">LGPD - Lei Geral de Proteção de Dados ></a></li>
+            <li><a href="Servico.aspx">Serviços></a></li>
+        </ul>
+    </footer>
     <script type="text/javascript" src="Js/AreaCliente.js"></script>
 </body>
 </html>
